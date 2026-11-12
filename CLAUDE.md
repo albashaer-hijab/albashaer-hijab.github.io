@@ -24,7 +24,7 @@ There is no test runner. Verification is `lint` + `tsc` + `build`.
 
 ## Deployment
 
-Hosted on GitHub Pages (Vercel was not an option: it requires a phone number the owner can't provide). `.github/workflows/deploy.yml` builds on every push to `main` with `GITHUB_PAGES=true` and `NEXT_PUBLIC_BASE_PATH` (from `actions/configure-pages`, e.g. `/albashaer`, empty with a custom domain) and publishes `out/`. In that mode `next.config.ts` switches to `output: "export"`, `trailingSlash`, `images.unoptimized`, and turns off `cacheComponents` / `partialPrefetching` (export fails with "PPR cannot be enabled in export mode" otherwise). Consequences:
+Hosted on GitHub Pages at https://albashaer-hijab.github.io from the repo `albashaer-hijab/albashaer-hijab.github.io` (git remote `origin`; `old-origin` is the earlier personal repo `Anas-Ammacha/albashaer`, no longer the deploy target). Vercel was not an option: it requires a phone number the owner can't provide). `.github/workflows/deploy.yml` builds on every push to `main` with `GITHUB_PAGES=true` and `NEXT_PUBLIC_BASE_PATH` (from `actions/configure-pages`, e.g. `/albashaer`, empty with a custom domain) and publishes `out/`. In that mode `next.config.ts` switches to `output: "export"`, `trailingSlash`, `images.unoptimized`, and turns off `cacheComponents` / `partialPrefetching` (export fails with "PPR cannot be enabled in export mode" otherwise). Consequences:
 
 - The site must stay fully static: no route handlers, server actions, cookies/headers or other server-only features.
 - `basePath` is not applied to `next/image` string sources: wrap every `/images/...` path in `asset()` from `lib/site.ts`. `next/link` hrefs are prefixed automatically.
