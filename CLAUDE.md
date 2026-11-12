@@ -50,7 +50,7 @@ Keep motion calm: the owner got dizzy from slowly moving background shapes, so n
 
 ## Conventions
 
-- All user-facing copy is Arabic, formal, addressing the customer in the feminine (e.g. "تواصلي معنا").
+- **Audience is B2B:** traders and shop owners buying wholesale, not end consumers. All user-facing copy is formal Arabic addressing the reader in the masculine singular (e.g. "تواصل معنا", "محلّك", "زبائنك"); never the feminine. Pitch is supplier-to-shop (factory-direct, wholesale, all colors, shipping). Don't state prices, minimum quantities or delivery times: the owner hasn't provided any.
 - **Trust content must be factual.** Don't invent years of experience, customer counts or testimonials (the owner removed a stats block). Facts in use: made in Damascus, wholesale, ships inside and outside Syria (never name specific countries: the owner had them removed), all colors available, working hours, and "نموذج مسجّل لدى حماية الملكية" (printed on the company brochure).
 - WhatsApp appears only on the contact page and in the footer by the owner's choice: no floating button, no WhatsApp buttons elsewhere. Other CTAs link to `/contact`.
 - The contact page has no form and no address card by design (the address is in the footer).

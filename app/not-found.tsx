@@ -13,12 +13,12 @@ export default function NotFound() {
       </p>
       <h1 className="mt-4 font-display text-3xl font-bold text-primary">الصفحة غير موجودة</h1>
       <p className="mt-3 max-w-md leading-8 text-foreground/70">
-        عذراً، لم نجد الصفحة التي تبحثين عنها. ربما تغيّر الرابط أو حُذفت الصفحة.
+        عذراً، لم نجد الصفحة التي تبحث عنها. ربما تغيّر الرابط أو حُذفت الصفحة.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <ButtonLink href="/">العودة إلى الرئيسية</ButtonLink>
         <ButtonLink href="/contact" variant="outline">
-          تواصلي معنا
+          تواصل معنا
         </ButtonLink>
       </div>
     </section>

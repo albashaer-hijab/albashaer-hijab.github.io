@@ -18,7 +18,7 @@ const facts: Fact[] = [
 
 export default function TrustStrip() {
   return (
-    <section aria-label="لماذا تثقين بنا" className="border-b border-line bg-white">
+    <section aria-label="لماذا تثق بنا" className="border-b border-line bg-white">
       <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-6 px-6 py-8 md:grid-cols-4">
         {facts.map(({ title, text, Icon }, i) => (
           <li key={title}>

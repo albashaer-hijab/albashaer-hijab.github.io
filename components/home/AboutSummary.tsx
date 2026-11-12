@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/site";
 
 // الكلمات الثلاث في شعار الشركة، مع معنى كل واحدة.
 const values = [
-  { word: "إبتكار", text: "تصاميم تواكب ذوقكِ وتحافظ على احتشامكِ." },
+  { word: "إبتكار", text: "تصاميم متجددة تواكب طلب السوق." },
   { word: "جودة", text: "أقمشة مختارة بعناية وتصنيع متقن." },
-  { word: "تميّز", text: "تفاصيل صغيرة تصنع فرقاً في مظهركِ." },
+  { word: "تميّز", text: "تفاصيل تميّز بضاعة محلّك عن غيرها." },
 ];
 
 export default function AboutSummary() {
@@ -18,11 +18,11 @@ export default function AboutSummary() {
         <Reveal delay={100}>
           <p className="text-lg leading-9 text-foreground/75">
             {siteConfig.name} شركة سورية متخصصة في صناعة وتجارة الحجابات والإشاربات، يقع مقرّها في{" "}
-            {siteConfig.address}. نجمع بين الأصالة والتصميم العصري لنقدّم لكِ حجاباً يعبّر عن ذوقكِ
-            ويدوم معكِ.
+            {siteConfig.address}. نجمع بين الأصالة والتصميم العصري لنقدّم لمحلّك بضاعة يثق بها
+            زبائنك.
           </p>
           <ButtonLink href="/about" variant="outline" className="mt-8">
-            اعرفي المزيد عنا
+            اعرف المزيد عنا
           </ButtonLink>
         </Reveal>
       </div>

@@ -49,7 +49,7 @@ export default function Header() {
             })}
           </ul>
           <ButtonLink href="/contact" className="px-5 py-2 text-sm">
-            تواصلي معنا
+            تواصل معنا
           </ButtonLink>
         </nav>
 

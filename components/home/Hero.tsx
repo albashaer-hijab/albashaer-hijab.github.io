@@ -6,7 +6,7 @@ import { heroImages, siteConfig } from "@/lib/site";
 
 const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
 
-const trustPoints = ["صناعة سورية", "جميع الألوان", "شحن داخل سوريا وخارجها"];
+const trustPoints = ["بيع بالجملة", "جميع الألوان", "شحن داخل سوريا وخارجها"];
 
 export default function Hero() {
   return (
@@ -30,10 +30,10 @@ export default function Hero() {
           </h1>
 
           <p className="animate-fade-up mt-4 text-2xl font-bold text-foreground" style={delay(320)}>
-            أناقة تليق بكِ في
+            من المصنع إلى محلّك
             {/* سطر مستقل بارتفاع ثابت حتى لا تتحرك الصفحة مع تغيّر الكلمات */}
             <Typewriter
-              words={["حجابات الليكرا", "حجابات القطن", "الراسيات الناعمة"]}
+              words={["حجابات ليكرا", "حجابات قطن", "راسيات ليكرا وقطن"]}
               className="mt-1 block min-h-[1.5em] text-secondary-deep"
             />
           </p>
@@ -42,8 +42,8 @@ export default function Hero() {
             className="animate-fade-up mx-auto mt-5 max-w-lg text-lg leading-9 text-foreground/70 md:mx-0"
             style={delay(460)}
           >
-            حين يجتمع الاحتشام مع الذوق الرفيع تزدادين ثقةً وإشراقاً. نصنع حجاباتنا في دمشق بعناية
-            وإتقان، وبكل الألوان التي تحبّينها.
+            نصنّع الحجابات والإشاربات في دمشق ونبيعها بالجملة لأصحاب المحلات والتجّار، بجميع
+            الألوان، مع شحن داخل سوريا وخارجها.
           </p>
 
           <div
@@ -51,10 +51,10 @@ export default function Hero() {
             style={delay(600)}
           >
             <ButtonLink href="/contact" className="animate-pulse-ring px-8 text-lg">
-              تواصلي معنا
+              تواصل معنا
             </ButtonLink>
             <ButtonLink href="/about" variant="outline" className="px-8 text-lg">
-              تعرّفي علينا
+              تعرّف علينا
             </ButtonLink>
           </div>
 

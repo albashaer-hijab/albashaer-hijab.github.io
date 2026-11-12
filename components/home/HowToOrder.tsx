@@ -10,9 +10,9 @@ interface Step {
 }
 
 const steps: Step[] = [
-  { title: "اختاري ما يناسبكِ", text: "حدّدي النوع واللون الذي يعجبكِ من تشكيلتنا.", Icon: GridIcon },
-  { title: "تواصلي معنا", text: "راسلينا عبر واتساب أو اتصلي بنا لتحديد التفاصيل.", Icon: ChatIcon },
-  { title: "نؤكد لكِ طلبكِ", text: "نجهّز الطلب ونتابع معكِ مباشرةً حتى يصلكِ.", Icon: ShieldCheckIcon },
+  { title: "حدّد طلبك", text: "اختر الأنواع والألوان والكميات التي يحتاجها محلّك.", Icon: GridIcon },
+  { title: "تواصل معنا", text: "راسلنا عبر واتساب أو اتصل بنا للاتفاق على التفاصيل والأسعار.", Icon: ChatIcon },
+  { title: "نجهّز ونشحن", text: "نجهّز طلبك ونشحنه إليك داخل سوريا أو خارجها.", Icon: ShieldCheckIcon },
 ];
 
 export default function HowToOrder() {
@@ -20,7 +20,7 @@ export default function HowToOrder() {
     <section className="mx-auto max-w-5xl px-6 py-20">
       <SectionHeading
         eyebrow="طريقة الطلب"
-        title="كيف تطلبين؟"
+        title="كيف تطلب؟"
         subtitle="ثلاث خطوات بسيطة وبدون تعقيد."
       />
       <ol className="relative grid gap-10 md:grid-cols-3 md:gap-6">

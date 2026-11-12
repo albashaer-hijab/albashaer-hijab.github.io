@@ -17,7 +17,7 @@ import { asset, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "من نحن",
-  description: "تعرّفي على قصة ورؤية ورسالة حجابات البشائر في دمشق.",
+  description: "تعرّف على قصة ورؤية ورسالة حجابات البشائر: مصنع حجابات وإشاربات في دمشق يبيع بالجملة.",
 };
 
 const highlights = [
@@ -36,7 +36,7 @@ interface Card {
 const visionMission: Card[] = [
   {
     title: "رؤيتنا",
-    text: "أن نكون الخيار الأول للمرأة العربية في عالم الحجابات والإشاربات، وأن نقدّم صناعة سورية تنافس بجودتها وإبداعها في الأسواق المحلية والعالمية.",
+    text: "أن نكون المورّد الأول لمحلات الحجابات والإشاربات، وأن نقدّم صناعة سورية تنافس بجودتها وإبداعها في الأسواق المحلية والعالمية.",
     Icon: SparkleIcon,
   },
   {
@@ -66,7 +66,7 @@ export default function AboutPage() {
       {/* قصتنا */}
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2">
         <div>
-          <SectionHeading align="start" eyebrow="قصتنا" title="من دمشق إلى كل من تحب الأناقة" />
+          <SectionHeading align="start" eyebrow="قصتنا" title="من دمشق إلى أسواق الداخل والخارج" />
           <Reveal delay={100}>
             <p className="text-lg leading-9 text-foreground/75">
               انطلقت {siteConfig.name} من دمشق بشغف كبير لتقديم حجابات وإشاربات تجمع بين الأصالة
@@ -157,7 +157,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <CallToAction title="يسعدنا التعرّف عليكِ" text="لديكِ سؤال أو طلب؟ تواصلي معنا مباشرةً وسنردّ عليكِ في ساعات العمل." />
+      <CallToAction title="يسعدنا التعامل معك" text="لديك سؤال أو طلب لمحلّك؟ تواصل معنا مباشرةً وسنردّ عليك في ساعات العمل." />
     </>
   );
 }

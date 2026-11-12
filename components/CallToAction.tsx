@@ -9,8 +9,8 @@ interface CallToActionProps {
 
 // قسم الدعوة للتواصل في نهاية الصفحات: خلفية داكنة بإطار ذهبي رفيع.
 export default function CallToAction({
-  title = "جاهزة لاختيار حجابكِ؟",
-  text = "تواصلي معنا وسنساعدكِ في اختيار النوع واللون المناسبين، سواء لطلبكِ الشخصي أو لمحلّكِ.",
+  title = "جاهز لتزويد محلّك؟",
+  text = "تواصل معنا لمعرفة الأسعار والكميات المتوفرة، وسنساعدك في اختيار ما يناسب محلّك وزبائنك.",
 }: CallToActionProps) {
   return (
     <section className="px-6 pb-20">
@@ -19,7 +19,7 @@ export default function CallToAction({
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">{title}</h2>
           <p className="mx-auto mt-4 max-w-xl leading-8 text-white/75">{text}</p>
           <ButtonLink href="/contact" variant="secondary" className="mt-8 px-9 text-lg">
-            تواصلي معنا
+            تواصل معنا
           </ButtonLink>
           <p className="mt-6 text-sm text-white/60">
             {siteConfig.address} · {siteConfig.workingHours} · نشحن داخل سوريا وخارجها
