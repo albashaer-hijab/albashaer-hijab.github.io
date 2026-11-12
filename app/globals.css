@@ -36,6 +36,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* الموقع فاتح دائماً، حتى لو كان الجوال في الوضع الليلي */
+  color-scheme: only light;
 }
 
 body {

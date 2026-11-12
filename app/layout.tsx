@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { El_Messiri, Tajawal } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -35,6 +35,12 @@ export const metadata: Metadata = {
     type: "website",
     siteName: siteConfig.name,
   },
+};
+
+// الموقع فاتح دائماً: يمنع المتصفح من تغميق الألوان تلقائياً في الوضع الليلي للجوال.
+export const viewport: Viewport = {
+  colorScheme: "only light",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
