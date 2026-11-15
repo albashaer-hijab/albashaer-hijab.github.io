@@ -1,5 +1,5 @@
 import type { ComponentType, SVGProps } from "react";
-import { GlobeIcon, MedalIcon, PaletteIcon } from "@/components/icons";
+import { GridIcon, MedalIcon, PaletteIcon } from "@/components/icons";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -21,9 +21,9 @@ const features: Feature[] = [
     Icon: PaletteIcon,
   },
   {
-    title: "جملة وشحن",
-    text: "نبيع بالجملة لأصحاب المحلات والتجّار، ونشحن الطلبات داخل سوريا وخارجها.",
-    Icon: GlobeIcon,
+    title: "تشكيلة متكاملة",
+    text: "حجابات ليكرا وقطن، راسيات، وزنود قطن: تجد ما يحتاجه محلّك عند مورّد واحد.",
+    Icon: GridIcon,
   },
 ];
 

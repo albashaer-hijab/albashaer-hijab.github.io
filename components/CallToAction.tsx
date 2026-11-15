@@ -1,6 +1,5 @@
 import ButtonLink from "@/components/Button";
 import Reveal from "@/components/Reveal";
-import { siteConfig } from "@/lib/site";
 
 interface CallToActionProps {
   title?: string;
@@ -21,9 +20,6 @@ export default function CallToAction({
           <ButtonLink href="/contact" variant="secondary" className="mt-8 px-9 text-lg">
             تواصل معنا
           </ButtonLink>
-          <p className="mt-6 text-sm text-white/60">
-            {siteConfig.address} · {siteConfig.workingHours} · نشحن داخل سوريا وخارجها
-          </p>
         </div>
       </Reveal>
     </section>

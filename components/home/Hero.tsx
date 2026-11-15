@@ -1,12 +1,9 @@
 import Image from "next/image";
 import ButtonLink from "@/components/Button";
-import { CheckCircleIcon } from "@/components/icons";
 import Typewriter from "@/components/Typewriter";
 import { heroImages, siteConfig } from "@/lib/site";
 
 const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
-
-const trustPoints = ["بيع بالجملة", "جميع الألوان", "شحن داخل سوريا وخارجها"];
 
 export default function Hero() {
   return (
@@ -33,7 +30,7 @@ export default function Hero() {
             من المصنع إلى محلّك
             {/* سطر مستقل بارتفاع ثابت حتى لا تتحرك الصفحة مع تغيّر الكلمات */}
             <Typewriter
-              words={["حجابات ليكرا", "حجابات قطن", "راسيات ليكرا وقطن"]}
+              words={["حجابات ليكرا", "حجابات قطن", "راسيات ليكرا وقطن", "زنود قطن"]}
               className="mt-1 block min-h-[1.5em] text-secondary-deep"
             />
           </p>
@@ -42,8 +39,8 @@ export default function Hero() {
             className="animate-fade-up mx-auto mt-5 max-w-lg text-lg leading-9 text-foreground/70 md:mx-0"
             style={delay(460)}
           >
-            نصنّع الحجابات والإشاربات في دمشق ونبيعها بالجملة لأصحاب المحلات والتجّار، بجميع
-            الألوان، مع شحن داخل سوريا وخارجها.
+            حجابات وراسيات وزنود بصناعة دمشقية متقنة، نورّدها بالجملة ودون وسيط لأصحاب المحلات
+            والتجّار.
           </p>
 
           <div
@@ -57,21 +54,9 @@ export default function Hero() {
               تعرّف علينا
             </ButtonLink>
           </div>
-
-          <ul
-            className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-foreground/75 md:justify-start"
-            style={delay(740)}
-          >
-            {trustPoints.map((point) => (
-              <li key={point} className="flex items-center gap-1.5">
-                <CheckCircleIcon className="h-5 w-5 text-secondary" />
-                {point}
-              </li>
-            ))}
-          </ul>
         </div>
 
-        {/* الصورتان داخل إطارين مقوّسين */}
+        {/* الصور الثلاث داخل إطارات مقوّسة */}
         <div className="animate-fade-up relative mx-auto w-full max-w-sm pb-8 md:max-w-md" style={delay(300)}>
           {/* قوس ذهبي رفيع خلف الصورة الكبيرة */}
           <span
@@ -90,10 +75,20 @@ export default function Hero() {
           </div>
           <div className="absolute bottom-0 start-0 aspect-[4/5] w-[46%] overflow-hidden rounded-t-full rounded-b-2xl border-[6px] border-white bg-secondary-soft shadow-xl shadow-primary/15">
             <Image
+              src={heroImages.sleeves}
+              alt="زند قطن من حجابات البشائر"
+              fill
+              sizes="(min-width: 768px) 18vw, 40vw"
+              className="object-cover object-top"
+            />
+          </div>
+          {/* القوس الصغير العلوي: صورة الحجاب الثانية */}
+          <div className="absolute start-0 top-1 aspect-[2/3] w-[30%] overflow-hidden rounded-t-full rounded-b-2xl border-[6px] border-white bg-secondary-soft shadow-xl shadow-primary/15">
+            <Image
               src={heroImages.side}
               alt="فتاة ترتدي حجاباً بلون هادئ"
               fill
-              sizes="(min-width: 768px) 18vw, 40vw"
+              sizes="(min-width: 768px) 12vw, 28vw"
               className="object-cover object-top"
             />
           </div>

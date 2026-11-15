@@ -2,19 +2,12 @@
 import ContactCard from "@/components/ContactCard";
 import PageBanner from "@/components/PageBanner";
 import Reveal from "@/components/Reveal";
-import {
-  BoxIcon,
-  ClockIcon,
-  GlobeIcon,
-  InstagramIcon,
-  PhoneIcon,
-  WhatsAppIcon,
-} from "@/components/icons";
+import { ClockIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from "@/components/icons";
 import { instagramHandle, phones, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "اتصل بنا",
-  description: `تواصل مع حجابات البشائر عبر الهاتف أو واتساب أو إنستغرام. ساعات العمل ${siteConfig.workingHours}. بيع بالجملة وشحن داخل سوريا وخارجها.`,
+  description: `تواصل مع حجابات البشائر عبر الهاتف أو واتساب أو إنستغرام. ساعات العمل ${siteConfig.workingHours}.`,
 };
 
 const buttonBase =
@@ -84,29 +77,12 @@ export default function ContactPage() {
             </ul>
           </ContactCard>
 
-          <div className="grid gap-6">
-            <ContactCard title="ساعات العمل" Icon={ClockIcon} delay={120}>
-              <p className="text-xl font-bold text-foreground">{siteConfig.workingHours}</p>
-              <p className="mt-2 text-base leading-7 text-foreground/70">
-                يمكنك مراسلتنا على واتساب في أي وقت، وسنرد عليك في ساعات العمل.
-              </p>
-            </ContactCard>
-
-            <ContactCard title="البيع بالجملة" Icon={BoxIcon} delay={200}>
-              <p className="text-base leading-8 text-foreground/80">
-                نبيع بالجملة لأصحاب المحلات والتجّار. تواصل معنا لمعرفة الأسعار والكميات المتوفرة.
-              </p>
-            </ContactCard>
-          </div>
-
-          <div className="md:col-span-2">
-            <ContactCard title="الشحن" Icon={GlobeIcon} delay={280}>
-              <p className="text-xl font-bold text-foreground">نشحن داخل سوريا وخارجها</p>
-              <p className="mt-2 text-base leading-8 text-foreground/80">
-                راسلنا على واتساب وأخبرنا بمدينتك أو بلدك لنرتّب لك الشحن.
-              </p>
-            </ContactCard>
-          </div>
+          <ContactCard title="ساعات العمل" Icon={ClockIcon} delay={120}>
+            <p className="text-xl font-bold text-foreground">{siteConfig.workingHours}</p>
+            <p className="mt-2 text-base leading-7 text-foreground/70">
+              يمكنك مراسلتنا على واتساب في أي وقت، وسنرد عليك في ساعات العمل.
+            </p>
+          </ContactCard>
         </div>
       </section>
     </>

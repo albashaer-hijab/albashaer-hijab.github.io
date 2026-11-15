@@ -5,7 +5,7 @@ export const siteConfig = {
   nameEn: "Al-Basha'er",
   slogan: "إبتكار.. جودة.. تميّز",
   description:
-    "حجابات البشائر: مصنع حجابات وإشاربات في دمشق - الحريقة. بيع بالجملة لأصحاب المحلات والتجّار، بجميع الألوان، مع شحن داخل سوريا وخارجها.",
+    "حجابات البشائر: مصنع حجابات وراسيات وزنود قطن في دمشق - الحريقة. بيع بالجملة لأصحاب المحلات والتجّار، مع شحن داخل سوريا وخارجها.",
   address: "دمشق - الحريقة",
   // ساعات العمل: تظهر في الفوتر وصفحة اتصل بنا.
   workingHours: "10 صباحاً - 8 مساءً",
@@ -23,10 +23,11 @@ export const instagramHandle = siteConfig.instagramUrl
 // تحت مسار فرعي مثل /albashaer). في التطوير المحلي لا يغيّر شيئاً.
 export const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
 
-// صورتا الهيرو في الصفحة الرئيسية (استبدليهما بنفس الاسم في public/images/lifestyle/).
+// صور الهيرو في الصفحة الرئيسية (تُستبدل بنفس الاسم في public/images/lifestyle/).
 export const heroImages = {
   main: asset("/images/lifestyle/hijab-gold.jpg"),
   side: asset("/images/lifestyle/hijab-calm.jpg"),
+  sleeves: asset("/images/lifestyle/sleeves-cotton.jpg"),
 };
 
 export const phones: PhoneNumber[] = [

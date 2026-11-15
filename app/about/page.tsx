@@ -2,30 +2,17 @@
 import Image from "next/image";
 import type { ComponentType, SVGProps } from "react";
 import CallToAction from "@/components/CallToAction";
+import Faq from "@/components/Faq";
 import PageBanner from "@/components/PageBanner";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import {
-  BoxIcon,
-  CheckCircleIcon,
-  GlobeIcon,
-  HomeHeartIcon,
-  MedalIcon,
-  SparkleIcon,
-} from "@/components/icons";
+import { HomeHeartIcon, MedalIcon, SparkleIcon } from "@/components/icons";
 import { asset, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "من نحن",
   description: "تعرّف على قصة ورؤية ورسالة حجابات البشائر: مصنع حجابات وإشاربات في دمشق يبيع بالجملة.",
 };
-
-const highlights = [
-  "تصنيع محلي في دمشق",
-  "جميع الألوان متوفرة",
-  "بيع بالجملة لأصحاب المحلات",
-  "شحن داخل سوريا وخارجها",
-];
 
 interface Card {
   title: string;
@@ -52,12 +39,6 @@ const values: Card[] = [
   { title: "تميّز", text: "نهتم بالتفاصيل الصغيرة التي تصنع الفرق.", Icon: HomeHeartIcon },
 ];
 
-const facts: Card[] = [
-  { title: "صناعة وتجارة", text: "نصنّع ونبيع الحجابات والإشاربات.", Icon: HomeHeartIcon },
-  { title: "جملة", text: "نتعامل مع أصحاب المحلات والتجّار.", Icon: BoxIcon },
-  { title: "شحن", text: "داخل سوريا وخارجها.", Icon: GlobeIcon },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -74,14 +55,6 @@ export default function AboutPage() {
               تطوير منتجاتنا عاماً بعد عام حتى أصبحنا اسماً يثق به كثيرون في صناعة وتجارة الحجابات
               والإشاربات.
             </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-2 font-medium text-foreground/85">
-                  <CheckCircleIcon className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                  {item}
-                </li>
-              ))}
-            </ul>
           </Reveal>
         </div>
 
@@ -141,21 +114,9 @@ export default function AboutPage() {
             </Reveal>
           ))}
         </div>
-
-        <ul className="mt-12 grid gap-4 rounded-2xl border border-line bg-white p-6 md:grid-cols-3 md:divide-x md:divide-line">
-          {facts.map(({ title, text, Icon }) => (
-            <li key={title} className="flex items-center gap-3 md:px-4">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary-soft text-primary">
-                <Icon className="h-5 w-5" />
-              </span>
-              <span>
-                <span className="block font-bold text-primary">{title}</span>
-                <span className="block text-sm text-foreground/65">{text}</span>
-              </span>
-            </li>
-          ))}
-        </ul>
       </section>
+
+      <Faq />
 
       <CallToAction title="يسعدنا التعامل معك" text="لديك سؤال أو طلب لمحلّك؟ تواصل معنا مباشرةً وسنردّ عليك في ساعات العمل." />
     </>

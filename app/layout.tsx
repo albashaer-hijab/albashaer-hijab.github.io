@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { El_Messiri, Tajawal } from "next/font/google";
+import { El_Messiri, Tajawal, Tangerine } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -19,6 +19,14 @@ const displayFont = El_Messiri({
   variable: "--font-display-ar",
   subsets: ["arabic", "latin"],
   weight: ["500", "600", "700"],
+  display: "swap",
+});
+
+// خط حرف B المزخرف في الشعار (components/Logo.tsx)
+const scriptFont = Tangerine({
+  variable: "--font-script",
+  subsets: ["latin"],
+  weight: "700",
   display: "swap",
 });
 
@@ -48,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="ar"
       dir="rtl"
-      className={`${tajawal.variable} ${displayFont.variable} h-full antialiased`}
+      className={`${tajawal.variable} ${displayFont.variable} ${scriptFont.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <ScrollProgress />
